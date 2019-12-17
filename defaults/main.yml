@@ -1,2 +1,3 @@
 ---
 # defaults file for podman
+podman_include_docker_shim: False

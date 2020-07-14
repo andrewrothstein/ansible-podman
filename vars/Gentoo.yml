@@ -1,0 +1,3 @@
+---
+podman_os_pkgs:
+  - app-emulation/libpod

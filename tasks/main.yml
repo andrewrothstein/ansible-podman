@@ -13,7 +13,7 @@
   become: yes
   become_user: root
   package:
-    name: podman
+    name: '{{ podman_os_pkgs | default(["podman"]) }}'
     state: present
 - name: install docker shim
   become: yes

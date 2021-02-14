@@ -15,10 +15,4 @@
   package:
     name: '{{ podman_os_pkgs | default(["podman"]) }}'
     state: present
-- name: install docker shim
-  become: yes
-  become_user: root
-  when: podman_include_docker_shim
-  package:
-    name: podman-docker
-    state: present
+

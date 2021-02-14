@@ -2,7 +2,3 @@
 - hosts: all
   roles:
   - role: '{{ playbook_dir }}'
-- hosts: all
-  roles:
-  - role: '{{ playbook_dir }}'
-    podman_include_docker_shim: True

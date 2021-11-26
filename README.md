@@ -1,6 +1,6 @@
 andrewrothstein.podman
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-podman.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-podman)
+![Build Status](https://github.com/andrewrothstein/ansible-podman/actions/workflows/build.yml/badge.svg)
 
 Installs [Podman](https://podman.io/)
 

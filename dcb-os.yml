@@ -1,7 +1,8 @@
+---
 - debian_bullseye
-- centos_7
 - centos_8
-- fedora_31
-- fedora_32
+- fedora_34
+- fedora_35
+- rockylinux_8.4
 - ubuntu_bionic
 - ubuntu_focal

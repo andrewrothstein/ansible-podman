@@ -16,8 +16,8 @@ galaxy_info:
         - 8
     - name: Fedora
       versions:
-        - 34
         - 35
+        - 36
     - name: Ubuntu
       versions:
         - bionic
@@ -26,5 +26,4 @@ galaxy_info:
     - development
 
 dependencies:
-  - role: andrewrothstein.kubic
-    version: v0.0.1
+  - andrewrothstein.kubic

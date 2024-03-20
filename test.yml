@@ -1,10 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.podman
+  hosts: all
   roles:
-  - role: '{{ playbook_dir }}'
+    - role: '{{ playbook_dir }}'
   tasks:
-  - command: podman --version
-    register: podman_test_output
-  - name: podman --version
-    debug:
-      msg: '{{ podman_test_output.stdout }}'
+    - name: Executing 'podman --version'
+      ansible.builtin.command: podman --version
+      changed_when: false
+      register: podman_test_output
+    - name: Output from 'podman --version'
+      ansible.builtin.debug:
+        msg: '{{ podman_test_output.stdout }}'

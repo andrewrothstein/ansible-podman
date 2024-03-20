@@ -1,9 +1,10 @@
 ---
-- include_role:
+- name: Installing andrewrothstein.kubic
+  ansible.builtin.include_role:
     name: andrewrothstein.kubic
 
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -12,7 +13,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: installing OS pkgs
+- name: Installing OS pkgs
   become: true
   become_user: root
   package:
